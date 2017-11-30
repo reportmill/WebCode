@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpringView width="500" height="72" PrefWidth="500" PrefHeight="72">
+  <RectView width="500" height="72" GrowWidth="true">
+    <LineBorder Color="#666666" />
+    <fill type="gradient" roll="90" color="#85b5e6" color2="#426fa3" color3="#85b5e6" stop2="0.5" nstops="3" />
+  </RectView>
+  <PathView Name="HomeButton" x="6" y="5" width="36" height="36">
+    <LineBorder />
+    <color value="#ff67b0" />
+    <path>
+      <mv x="258" y="463" />
+      <ln x="258" y="476" />
+      <ln x="241" y="476" />
+      <ln x="241" y="463" />
+      <cl />
+      <mv x="246" y="481" />
+      <ln x="246" y="506" />
+      <ln x="226" y="506" />
+      <ln x="226" y="481" />
+      <cl />
+      <mv x="237" y="409" />
+      <ln x="195" y="457" />
+      <ln x="208" y="457.148" />
+      <ln x="208" y="508" />
+      <ln x="265" y="508" />
+      <ln x="265" y="457.795" />
+      <ln x="283" y="458" />
+      <ln x="237" y="409" />
+      <cl />
+    </path>
+  </PathView>
+  <PathView Name="BackButton" x="48" y="5" width="36" height="36">
+    <LineBorder />
+    <color value="#00cccc" />
+    <path>
+      <mv x="206" y="226" />
+      <ln x="206" y="293" />
+      <ln x="123" y="292" />
+      <ln x="123" y="339" />
+      <ln x="48" y="257" />
+      <ln x="128" y="172" />
+      <ln x="131" y="223" />
+      <cl />
+    </path>
+  </PathView>
+  <PathView Name="NextButton" x="90" y="5" width="36" height="36">
+    <LineBorder />
+    <color value="#00cccc" />
+    <path>
+      <mv x="4.747" y="-16" />
+      <ln x="3.987" y="-3.784" />
+      <ln x="-15" y="-3.066" />
+      <ln x="-15" y="12.982" />
+      <ln x="6.013" y="12.743" />
+      <ln x="6.013" y="24" />
+      <ln x="25" y="4.359" />
+      <ln x="4.747" y="-16" />
+      <cl />
+    </path>
+  </PathView>
+  <PathView Name="RefreshButton" x="132" y="5" width="36" height="36">
+    <LineBorder />
+    <color value="#9eceff" />
+    <path>
+      <mv x="71.222" y="-26.55" />
+      <ln x="76.397" y="2.801" />
+      <ln x="76.397" y="2.801" />
+      <cv cp1x="32.559" cp1y="13.408" cp2x="0" cp2y="52.901" x="0" y="100" />
+      <cv cp1x="0" cp1y="155.23" cp2x="44.77" cp2y="200" x="100" y="200" />
+      <cv cp1x="155.23" cp1y="200" cp2x="200" cp2y="155.23" x="200" y="100" />
+      <cv cp1x="200" cp1y="99.998" cp2x="200" cp2y="99.997" x="200" y="99.995" />
+      <ln x="140" y="99.995" />
+      <cv cp1x="140" cp1y="99.997" cp2x="140" cp2y="99.998" x="140" y="100" />
+      <cv cp1x="140" cp1y="122.092" cp2x="122.092" cp2y="140" x="100" y="140" />
+      <cv cp1x="77.908" cp1y="140" cp2x="60" cp2y="122.092" x="60" y="100" />
+      <cv cp1x="60" cp1y="82.507" cp2x="71.228" cp2y="67.637" x="86.872" y="62.204" />
+      <ln x="86.872" y="62.204" />
+      <ln x="92.06" y="91.627" />
+      <ln x="170.273" y="16.91" />
+      <ln x="71.222" y="-26.55" />
+      <cl />
+    </path>
+  </PathView>
+  <PathView Name="RunButton" x="174" y="5" width="36" height="36">
+    <LineBorder />
+    <color value="#2aff4b" />
+    <path>
+      <mv x="363" y="270" />
+      <ln x="363" y="321" />
+      <ln x="418" y="296" />
+      <cl />
+    </path>
+  </PathView>
+  <ComboBox Name="SearchComboBox" x="293" y="16" width="200" height="22" LeanX="RIGHT" ShowTextField="true" ShowButton="false" FilterList="true">
+    <font name="Arial" size="12" />
+  </ComboBox>
+</SpringView>

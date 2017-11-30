@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpringView width="750" height="720" PrefWidth="800" PrefHeight="740">
+  <fill color="#FFFFFF" />
+  <TextArea x="41" y="42" width="662" height="130" Padding="20" Rich="true" WrapText="true">
+    <LineBorder />
+    <RichText>
+      <font name="Arial Bold" size="40" />
+      <pgraph align="center" />
+      <string>Welcome to WebCode!</string>
+    </RichText>
+  </TextArea>
+  <TextArea x="41" y="180" width="662" height="495" Padding="20" Rich="true" WrapText="true">
+    <LineBorder Color="#3d3d3d" />
+    <RichText>
+      <font name="Arial" size="26" />
+      <string>&#10;</string>
+      <string>&#10;</string>
+      <string>This is a preview version of WebCode. Currently it just displays project files with syntax coloring. Code can be edited, but edits are ignored. Double clicking on a sample source file or hitting the run button will result in the launch of one of the standard SnapKit/CheerpJ demos. But currently there is no support for compile.</string>
+    </RichText>
+  </TextArea>
+  <ImageView x="566" y="6" width="128" height="232" ImageName="/webcode/app/pkg.images/Duke.png" />
+</SpringView>
