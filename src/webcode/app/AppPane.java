@@ -261,7 +261,7 @@ public WebSite getSelectedSite()
 /**
  * Catch changes to files.
  */
-public void deepChange(PropChangeListener aSource, PropChange anEvent)
+public void deepChange(Object aSource, PropChange anEvent)
 {
     // Get source and property name
     Object source = anEvent.getSource(); String pname = anEvent.getPropertyName();
