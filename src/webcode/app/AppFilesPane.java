@@ -50,7 +50,7 @@ public List <WebFile> getSelectedFiles()
 {
     WebFile sf = _appPane.getSelectedFile();
     return sf==null? Collections.EMPTY_LIST : Collections.singletonList(sf);
-    //List files = new ArrayList(); AppFile item = _app.getSelectedItem();
+    //List files = new ArrayList(); AppFile item = _app.getSelItem();
     //if(item!=null && item.getFile()!=null) files.add(item.getFile()); return files;
 }
 
@@ -135,7 +135,7 @@ public void showInTree(WebFile aFile)
     
     // If file is SelectedFile, make FilesTree select it
     if(aFile==getSelectedFile())
-        _filesTree.setSelectedItem(afile);
+        _filesTree.setSelItem(afile);
 }
 
 /**
@@ -177,14 +177,14 @@ public void resetUI()
     WebFile file = getAppPane().getSelectedFile();
     AppFile afile = getAppFile(file);
     _filesTree.setItems(getRootFiles());
-    _filesTree.setSelectedItem(afile);
+    _filesTree.setSelItem(afile);
     
     // Update FilesList
     List <WebFile> wfiles = _appPane._toolBar._openFiles;
     List afiles = new ArrayList(wfiles.size());
     for(WebFile wf : wfiles) afiles.add(getAppFile(wf));
     _filesList.setItems(afiles);
-    _filesList.setSelectedItem(afile);
+    _filesList.setSelItem(afile);
 }
 
 /**
@@ -227,7 +227,7 @@ public void respondUI(ViewEvent anEvent)
         
         // Handle Selection event: Select file for tree selection
         else if(anEvent.isActionEvent()) { //if(anEvent.isSelectionEvent()) {
-            AppFile item = (AppFile)anEvent.getSelectedItem();
+            AppFile item = (AppFile)anEvent.getSelItem();
             WebFile file = item!=null? item.getFile() : null;
             _appPane.setSelectedFile(file);
         }
@@ -322,7 +322,7 @@ boolean addFile(WebFile aDirectory, File aFile)
         WebFile siteFile = site.getFile(aDirectory.getDirPath() + name);
         
         // See if IsDuplicating (there is a local file and it is the same as given file)
-        File siteLocalFile = siteFile!=null? siteFile.getStandardFile() : null;
+        File siteLocalFile = siteFile!=null? siteFile.getJavaFile() : null;
         boolean isDuplicating = SnapUtils.equals(aFile, siteLocalFile);
         
         // If file exists, run option panel for replace
@@ -607,7 +607,7 @@ public void copy()
 {
     List <WebFile> dfiles = getSelectedFiles();
     List <File> files = new ArrayList();
-    for(WebFile df : dfiles) if(df.getStandardFile()!=null) files.add(df.getStandardFile());
+    for(WebFile df : dfiles) if(df.getJavaFile()!=null) files.add(df.getJavaFile());
     Clipboard cb = Clipboard.get();
     cb.addData(files);
 }
